@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -23,8 +22,9 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
-        font-size: 12px;
+        font-size: 0.75rem;
         text-align: center;
+        margin-bottom: 1rem;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -32,42 +32,43 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="column justify-center align-center h-100">
-        <div class="order-summary">
-          <!-- hero -->
-          <img
-            src="./images/illustration-hero.svg"
-            height="171"
-            width="350"
-            alt="illustration of a girl listen to music"
-          />
-          <div class="order-summary-body">
-            <h2 class="order-summary-header">Order Summary</h2>
-            <p class="order-summary-caption">
-              You can now listen to millions of songs, audiobooks, and podcasts
-              on any device anywhere you like!
-            </p>
-            <div class="order-summary-plan">
-              <div class="order-summary-planIcon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#DFE6FB"/><path fill="#717FA6" fill-rule="nonzero" d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"/></g></svg></div>
-              <div class="order-summary-planContent">
-                <h3 class="order-summary-planTitle">Annual Plan</h3>
-                <div class="order-summary-planPrice">$59.99/year</div>
-              </div>
-              <a href="#" class="order-summary-change">Change</a>
+    <main class="container">
+      <div class="order-summary">
+        <img class="order-summary-hero" src="./images/illustration-hero.svg" alt="" />
+        <article class="order-summary-body">
+          <h1 class="order-summary-header">Order Summary</h1>
+          <p class="order-summary-caption">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div class="order-summary-plan">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+              <g fill="none" fill-rule="evenodd">
+                <circle cx="24" cy="24" r="24" fill="#DFE6FB" />
+                <path
+                  fill="#717FA6"
+                  fill-rule="nonzero"
+                  d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"
+                />
+              </g>
+            </svg>
+            <div class="order-summary-planAgreement">
+              <h2>Annual Plan</h2>
+              <strong>$59.99/year</strong>
             </div>
-            <a href="#" class="order-summary-proceed">Proceed to Payment</a>
-            <a href="#" class="order-summary-cancel">Cancel Order</a>
+            <a href="#" class="order-summary-change">Change</a>
           </div>
-        </div>
-        <div class="attribution">
-          Challenge by <a
-            href="https://www.frontendmentor.io?ref=challenge"
-            target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Mohamed Amine</a>.
-        </div>
+          <a href="#" class="order-summary-payment">Proceed to Payment</a>
+          <a href="#" class="order-summary-cancel">Cancel Order</a>
+        </article>
       </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.frontendmentor.io/profile/mohamedrebbadj">Mohamed Amine</a>.
     </div>
   </body>
 </html>
